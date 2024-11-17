@@ -216,7 +216,7 @@ public class AddCatalogProduct {
 
             System.out.println(selectedMarka);
             // Устанавливаем соединение с базой данных
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/exampledb", "exampleuser", "examplepassword");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:13306/exampledb", "exampleuser", "examplepassword");
 
             // Создаем SQL-запрос для получения id марки
             String query = "SELECT idMarka FROM marka WHERE Marka_name = ?";

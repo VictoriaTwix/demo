@@ -25,7 +25,7 @@ public class ClientProfile {
                 int role = authorization.b;
                 // Подключение к базе данных
                 dbUsers = new DBUsers();
-                String url = "jdbc:mysql://localhost:3306/exampledb";
+                String url = "jdbc:mysql://localhost:13306/exampledb";
                 String username = "exampleuser";
                 String password = "examplepassword";
                 try {
