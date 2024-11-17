@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="423.0" prefWidth="523.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ClientProfile">
+   <children>
+      <Label layoutX="228.0" layoutY="14.0" text=" Заказы">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="spis_zak_act" layoutX="28.0" layoutY="55.0" prefHeight="349.0" prefWidth="470.0" style="-fx-border-color: black;" />
+      <ImageView fx:id="img_exit" fitHeight="35.0" fitWidth="37.0" layoutX="463.0" layoutY="9.0" onMouseClicked="#handleImagVixod" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../exit.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

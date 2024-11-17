@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="363.0" prefWidth="671.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.RedactProduct">
+   <children>
+      <Label layoutX="183.0" layoutY="30.0" text="Редактирование товара в каталоге">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="167.0" prefHeight="22.0" prefWidth="139.0" text="Описание ">
+         <font>
+            <Font name="Cambria Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="123.0" prefHeight="22.0" prefWidth="123.0" text="Цена">
+         <font>
+            <Font name="Cambria Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="78.0" prefHeight="22.0" prefWidth="162.0" text="Год производства">
+         <font>
+            <Font name="Cambria Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="descr_text" layoutX="257.0" layoutY="166.0" prefHeight="25.0" prefWidth="282.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 5;">
+         <font>
+            <Font name="Cambria Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="price_text" layoutX="257.0" layoutY="122.0" prefHeight="25.0" prefWidth="282.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 5;">
+         <font>
+            <Font name="Cambria Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="age_text" layoutX="257.0" layoutY="77.0" prefHeight="25.0" prefWidth="282.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 5;">
+         <font>
+            <Font name="Cambria Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="37.0" layoutY="220.0" prefHeight="22.0" prefWidth="123.0" text="Фотографиия">
+         <font>
+            <Font name="Cambria Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phototext" layoutX="257.0" layoutY="219.0" prefHeight="25.0" prefWidth="282.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 5;">
+         <font>
+            <Font name="Cambria Bold" size="12.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="93.0" fitWidth="113.0" layoutX="557.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../newlogo..png" />
+         </image>
+      </ImageView>
+      <Button fx:id="update_info" layoutX="250.0" layoutY="320.0" mnemonicParsing="false" onAction="#updateInfo" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: black;" text="Обновить информацию" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="exit" fitHeight="22.0" fitWidth="32.0" layoutX="635.0" layoutY="322.0" onMouseClicked="#handleImagVixodDir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../exit.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="37.0" layoutY="268.0" prefHeight="22.0" prefWidth="139.0" text="Статус наличия">
+         <font>
+            <Font name="Cambria Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nalichie" layoutX="257.0" layoutY="266.0" prefHeight="25.0" prefWidth="282.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 5;">
+         <font>
+            <Font name="Cambria Bold" size="12.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="add_photo_img" fitHeight="32.0" fitWidth="22.0" layoutX="546.0" layoutY="221.0"  pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../add.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

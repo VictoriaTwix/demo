@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="570.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AvtoVNalichii">
+   <children>
+      <ListView fx:id="idspisavto" layoutX="95.0" layoutY="91.0" prefHeight="308.0" prefWidth="408.0" style="-fx-border-color: black;" />
+      <Label layoutX="193.0" layoutY="33.0" text="Автомобили в наличи">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="zakaz" layoutX="89.0" layoutY="405.0" mnemonicParsing="false" onMouseClicked="#Zakaz" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: black;" text="Оформить заказ" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="12.0" />
+         </font></Button>
+      <ImageView fx:id="exit_img_2" fitHeight="30.0" fitWidth="31.0" layoutX="473.0" layoutY="408.0" onMouseClicked="#handleImagVixod" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../exit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../newlogo..png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

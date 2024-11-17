@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="idContainer" prefHeight="316.0" prefWidth="363.0" style="-fx-background-color: цршеу;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <VBox fx:id="idStr" layoutX="-1.0" prefHeight="332.0" prefWidth="322.0">
+         <children>
+                <ImageView fx:id="idImg" fitHeight="178.0" fitWidth="364.0" pickOnBounds="true" preserveRatio="true" />
+            <HBox prefHeight="53.0" prefWidth="323.0">
+               <children>
+                  <Label fx:id="marka1" alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="96.0" text="Марка:">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="marka" alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="279.0" text="Label">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="323.0">
+               <children>
+                  <Label fx:id="marka11" alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="98.0" text="Модель:">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="model" alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="259.0" text="Label">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="323.0">
+               <children>
+                  <Label fx:id="marka111" alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="128.0" text="Год выпуска:">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="date_a" alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="198.0" text="Label">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="323.0">
+               <children>
+                  <Label fx:id="marka1111" alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="232.0" text="Описание:">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="deskr" alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="379.0" text="Label">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="57.0" prefWidth="323.0">
+               <children>
+                  <Label fx:id="price1" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="323.0" text="Цена:">
+                     <font>
+                        <Font name="Cambria Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price" alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="514.0" text="Label">
+                     <font>
+                        <Font name="Cambria Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

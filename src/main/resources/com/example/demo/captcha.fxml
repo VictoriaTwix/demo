@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="155.0" prefWidth="256.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Captcha">
+    <children>
+        <VBox prefHeight="102.0" prefWidth="256.0">
+            <children>
+                <Canvas fx:id="canvas" height="63.0" width="249.0" />
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="textInputField" prefHeight="38.0" prefWidth="269.0" style="-fx-border-color: black;" />
+                    </children></HBox>
+            </children>
+        </VBox>
+        <Button fx:id="id_proverka" layoutX="100.0" layoutY="115.0" mnemonicParsing="false" onAction="#checkCaptcha" style="-fx-background-color: black;" text="проверка" textFill="WHITE" />
+    </children>
+
+</AnchorPane>

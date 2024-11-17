@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="458.0" prefWidth="637.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ModelsRyad">
+   <children>
+      <ListView fx:id="modelryad" layoutX="179.0" layoutY="87.0" prefHeight="352.0" prefWidth="407.0" style="-fx-border-color: black;" />
+      <Label layoutX="305.0" layoutY="38.0" text="Модельный ряд">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="bmw_l1" layoutX="25.0" layoutY="164.0" text="Сортировка по">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="176.0" fitWidth="166.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../newlogo..png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="marka_box" layoutX="14.0" layoutY="209.0" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10;" />
+      <Label fx:id="bmw_l11" layoutX="56.0" layoutY="183.0" text="марке:">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="vixod_img" fitHeight="24.0" fitWidth="31.0" layoutX="599.0" layoutY="415.0" onMouseClicked="#handleImageClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../exit.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="price_box" layoutX="14.0" layoutY="298.0" onAction="#handleSortByPrice" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10;" />
+      <Label fx:id="bmw_l12" layoutX="25.0" layoutY="252.0" text="Сортировка по">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="bmw_l111" layoutX="56.0" layoutY="271.0" text="цене:">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
