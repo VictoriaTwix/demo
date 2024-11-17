@@ -5,8 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DBUsers {
+    private static Connection connection;
     private final String HOST = "localhost";
-    private final String PORT = "3306";
+    private final String PORT = "13306";
     private final String DB_NAME = "exampledb";
     private final String LOGIN = "exampleuser"; // Если OpenServer, то здесь mysql напишите
     private final String PASS = "examplepassword"; // Если OpenServer, то здесь mysql напишите
