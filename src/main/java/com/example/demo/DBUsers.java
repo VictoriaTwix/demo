@@ -7,9 +7,9 @@ import java.util.List;
 public class DBUsers {
     private final String HOST = "localhost";
     private final String PORT = "3306";
-    private final String DB_NAME = "avto4";
-    private final String LOGIN = "root"; // Если OpenServer, то здесь mysql напишите
-    private final String PASS = ""; // Если OpenServer, то здесь mysql напишите
+    private final String DB_NAME = "exampledb";
+    private final String LOGIN = "exampleuser"; // Если OpenServer, то здесь mysql напишите
+    private final String PASS = "examplepassword"; // Если OpenServer, то здесь mysql напишите
 
 
     private Connection dbConn = null;

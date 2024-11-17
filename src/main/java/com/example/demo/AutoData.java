@@ -36,6 +36,7 @@ public class AutoData {
 
     public int getIdAvto() {
 
+
         return this.id;
     }
 

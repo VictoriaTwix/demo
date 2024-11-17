@@ -107,7 +107,7 @@ public class AddCatalogProduct {
                 int modelId = getModelId(); // Получаем id модели
 
                 // Устанавливаем соединение с базой данных
-                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/avto4", "root", "");
+                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/exampledb", "exampleuser", "examplepassword");
 
                 // Создаем SQL-запрос для вставки данных в таблицу catalogauto
                 String query = "INSERT INTO catalogauto (Date_proizvod, Price, descr, Manufactur_idManufactur,Marka_idMarka, catalogautoPhoto, model_idModel) VALUES (?, ?, ?, ?, ?, ?, ?)";
@@ -177,7 +177,7 @@ public class AddCatalogProduct {
             String selectedManufactur = post_box.getValue(); // Получаем значение из текстового поля производителя
             System.out.println(selectedManufactur);
             // Устанавливаем соединение с базой данных
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/avto4", "root", "");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/exampledb", "exampleuser", "examplepassword");
 
             // Создаем SQL-запрос для получения id производителя
             String query = "SELECT idManufactur FROM manufactur WHERE Name_compani = ?";
@@ -216,7 +216,7 @@ public class AddCatalogProduct {
 
             System.out.println(selectedMarka);
             // Устанавливаем соединение с базой данных
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/avto4", "root", "");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/exampledb", "exampleuser", "examplepassword");
 
             // Создаем SQL-запрос для получения id марки
             String query = "SELECT idMarka FROM marka WHERE Marka_name = ?";
@@ -260,7 +260,7 @@ public class AddCatalogProduct {
             String selectedModel = model_text1.getValue(); // Получаем значение из текстового поля модели
 
             // Устанавливаем соединение с базой данных
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/avto4", "root", "");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/exampledb", "exampleuser", "examplepassword");
 
             // Создаем SQL-запрос для получения id модели
             String query = "SELECT idModel FROM model WHERE Modelname = ?";

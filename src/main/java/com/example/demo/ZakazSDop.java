@@ -215,7 +215,7 @@ public class ZakazSDop {
         try {
 
             // Установка соединения с базой данных
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/avto4", "root", "");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/exampledb", "exampleuser", "examplepassword");
 
             // Создание SQL-запроса для вставки данных заказа
             String query = "INSERT INTO catalogauto_has_clients VALUES (?, ?, ?, null, ?, ?,?)";

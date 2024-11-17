@@ -25,9 +25,9 @@ public class ClientProfile {
                 int role = authorization.b;
                 // Подключение к базе данных
                 dbUsers = new DBUsers();
-                String url = "jdbc:mysql://localhost:3306/avto4";
-                String username = "root";
-                String password = "";
+                String url = "jdbc:mysql://localhost:3306/exampledb";
+                String username = "exampleuser";
+                String password = "examplepassword";
                 try {
                     Connection connection = DriverManager.getConnection(url, username, password);
                     // Выполнение запроса на выборку значений из таблицы "order"
